@@ -3,8 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>:: Daftar :: - Teacher's Forum</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
+    <header class="app-bar">
+        <button id="nav-button" class="app-bar-nav-button"><i class="material-icons">menu</i></button>
+        <h1 class="app-bar-title">Teacher's Forum</h1>
+        <nav id="nav-drawer" class="nav-drawer">
+            <ul>
+                <li><a href="./login.html" class="nav-item">Login</a></li>
+                <li><a href="./register.html" class="nav-item">Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-main">
+        <section id="register-dialog">
+            <h2 class="section-title">Daftar Akun Baru</h2>
+            <div id="register-box" class="card">
+                <form class="form">
+                    <div class="form-input-group">
+                        <label for="registerName" class="form-label">Nama</label>
+                        <input type="text" id="registerName" name="registerName" class="form-input" required>
+                    </div>
+                    <div class="form-input-group">
+                        <label for="registerOffice" class="form-label">Instansi</label>
+                        <input type="text" id="registerOffice" name="registerOffice" class="form-input" required>
+                    </div>
+                    <div class="form-input-group">
+                        <label for="registerEmail" class="form-label">E-mail</label>
+                        <input type="email" id="registerEmail" name="registerEmail" class="form-input" required>
+                    </div>
+                    <div class="form-input-group">
+                        <label for="registerPassword" class="form-label">Password baru</label>
+                        <input type="password" id="registerPassword" name="registerPassword" class="form-input" required>
+                    </div>
+                    <div class="form-input-group">
+                        <label for="registerPasswordConfirm" class="form-label">Konfirmasi Password baru</label>
+                        <input type="password" id="registerPasswordConfirm" name="registerPasswordConfirm" class="form-input" required>
+                    </div>
+                    <div class="form-button-group">
+                        <a href="./login.html" class="button-primary">Daftar</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2020 - hifra01</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

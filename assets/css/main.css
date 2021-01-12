@@ -112,18 +112,37 @@ html, body, main {
         height: 100%;
         margin-right: 0;
         z-index: -1;
+        box-shadow: var(--shadow-1dp);
     }
     .nav-drawer.open {
         visibility: visible;
         transform: translate(250px, 0);
     }
     .nav-drawer ul {
+        padding: 0;
+        display: block;
+        list-style: none;
         height: 100%;
         margin-top: var(--app-bar-height);
         background-color: var(--primary-bg-color-invert);
     }
+    .nav-drawer ul li {
+        width: 100%;
+        height: initial;
+        padding: 1em;
+    }
     .nav-drawer ul li a {
+        padding-left: 2em;
+        margin: 0;
         color: var(--primary-color-invert);
+        width: 100%;
+        display: inline-block;
+        text-decoration: none;
+        border-radius: 90px;
+    }
+    .nav-drawer ul li a:active {
+        color: var(--primary-color);
+        background-color: var(--primary-bg-color);
     }
 }
 
@@ -183,7 +202,7 @@ main {
 .form-input {
     display: block;
     width: 100%;
-    min-height: 1.5em;
+    min-height: 3em;
     margin-top: 0.5em;
     padding: 0.25em;
     border-radius: 5px;
@@ -212,10 +231,11 @@ footer {
     left: 0;
     border-top: 1px solid #cccccc;
     background-color: var(--bg-color);
+    display: flex;
 }
 
 footer p {
-    margin-top: 1.5em;
+    margin: auto;
     text-align: center;
 }
 
@@ -235,6 +255,19 @@ footer p {
 
 @media screen and (max-width: 1024px) {
     #login-dialog {
+        width: 90%;
+    }
+}
+
+/*Page: register.html*/
+
+#register-dialog {
+    width: 40%;
+    margin-top: 8%;
+}
+
+@media screen and (max-width: 1024px) {
+    #register-dialog {
         width: 90%;
     }
 }
