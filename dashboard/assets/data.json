@@ -1,0 +1,37 @@
+{
+    "posts": [{
+            "id": 0,
+            "title": "tips mengajar saat pandemi",
+            "created_by": "Jono",
+            "topics": [
+                "Zoom",
+                "WFH"
+            ],
+            "replies": [{
+                    "id": 0,
+                    "created_by": "Jono",
+                    "content": "kira-kira ada tips untuk ngajar saat pandemi gini gk ya? selama ini saya ngajar tapi siswa saya kok kaya ngantuk semua xixixi"
+                },
+                {
+                    "id": 1,
+                    "created_by": "Imam",
+                    "content": "dibuat video youtube saja pak, biar mereka bisa nonton kapan saja"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "title": "rekomendasi laptop untuk mengajar",
+            "created_by": "Imam",
+            "topics": [
+                "IT",
+                "WFH"
+            ],
+            "replies": [{
+                "id": 0,
+                "created_by": "Imam",
+                "content": "Saya rencana mau beli laptop baru soalnya yang lama dipake anak saya sekolah online. Kira-kira merek yg aman di kantong apa ya?"
+            }]
+        }
+    ]
+}
