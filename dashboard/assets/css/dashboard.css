@@ -16,6 +16,8 @@
     --shadow-3dp: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.20);
     --shadow-4dp: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.20);
     --app-bar-height: 10vh;
+    --hover-shadow-color: #ddd;
+    --click-shadow-color: #aaa;
 }
 
 
@@ -57,100 +59,15 @@ main {
 }
 
 .app-bar-nav-button {
-    visibility: hidden;
-}
-
-.nav-drawer {
-    margin: auto 2rem auto auto;
-}
-
-.nav-drawer ul {
-    margin: auto;
-}
-
-.nav-drawer ul li {
-    list-style-type: none;
     display: inline-block;
+    visibility: visible;
+    font-size: 2em;
+    background-color: transparent;
+    border: 0;
     height: 100%;
-}
-
-.nav-item {
-    display: inline-block;
-    text-decoration: none;
     color: var(--primary-color);
-    font-weight: bold;
-    font-size: large;
-    align-items: center;
-    padding: 1em;
-    border-radius: var(--button-border-radius);
-}
-
-.nav-item:hover {
-    background-color: var(--primary-bg-color-invert);
-    color: var(--primary-color-invert);
-}
-
-
-/*Section: App Bar Responsive*/
-
-@media screen and (max-width: 1024px) {
-    .app-bar {
-        z-index: 1;
-    }
-    .app-bar-nav-button {
-        display: inline-block;
-        visibility: visible;
-        font-size: 2em;
-        background-color: transparent;
-        border: 0;
-        height: 100%;
-        color: var(--primary-color);
-        width: 2em;
-        cursor: pointer;
-    }
-    .nav-drawer {
-        visibility: hidden;
-        position: fixed;
-        top: 0;
-        left: -70vw;
-        transition: transform 0.3s ease-in-out, visibility 0.3s ease-out;
-        background-color: transparent;
-        width: 70vw;
-        height: 100%;
-        margin-right: 0;
-        z-index: -1;
-        box-shadow: var(--shadow-1dp);
-    }
-    .nav-drawer.open {
-        visibility: visible;
-        transform: translate(70vw, 0);
-    }
-    .nav-drawer ul {
-        padding: 0;
-        display: block;
-        list-style: none;
-        height: 100%;
-        margin-top: var(--app-bar-height);
-        background-color: var(--primary-bg-color-invert);
-    }
-    .nav-drawer ul li {
-        width: 100%;
-        height: initial;
-        padding: 1em;
-    }
-    .nav-item {
-        padding-left: 2em;
-        margin: 0;
-        color: var(--primary-color-invert);
-        width: 100%;
-        display: inline-block;
-        text-decoration: none;
-        border-radius: 90px;
-    }
-    .nav-item:active {
-        color: var(--primary-color);
-        background-color: var(--primary-bg-color);
-    }
+    width: 2em;
+    cursor: pointer;
 }
 
 
@@ -162,7 +79,106 @@ main {
 
 .flex-main {
     display: flex;
-    justify-content: center;
+}
+
+
+/*Section: Nav Drawer*/
+
+.nav-drawer {
+    visibility: hidden;
+    position: fixed;
+    left: -20vw;
+    width: 25vw;
+    height: 100%;
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-out;
+    overflow: hidden;
+    padding: 2em;
+}
+
+.nav-drawer.open {
+    visibility: visible;
+    box-shadow: var(--shadow-2dp);
+    transform: translate(20vw, 0);
+}
+
+.drawer-profile {
+    display: block;
+    width: 100%;
+}
+
+.drawer-profile img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 250px;
+}
+
+.drawer-profile p {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.nav-drawer ul {
+    margin-top: 8px;
+    padding: 0;
+    display: block;
+    list-style: none;
+    height: 100%;
+}
+
+.nav-drawer ul li {
+    width: 100%;
+    margin: 1em 0;
+}
+
+.nav-item {
+    color: var(--primary-color-invert);
+    width: 100%;
+    padding: 1em;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 90px;
+    font-weight: bold;
+    padding-left: 2em;
+    margin: 0;
+    color: var(--primary-color-invert);
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 90px;
+}
+
+.nav-item:hover {
+    background-color: var(--hover-shadow-color);
+}
+
+.nav-item:active {
+    background-color: var(--click-shadow-color);
+}
+
+.nav-item.active {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+}
+
+
+/* Section: Nav Drawer Responsive */
+
+@media screen and (max-width: 1024px) {
+    .nav-drawer {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-drawer {
+        width: 75vw;
+    }
+    .drawer-profile img {
+        max-width: 100px;
+    }
 }
 
 
@@ -262,4 +278,13 @@ footer p {
     font-weight: bold;
     margin-bottom: 1em;
     text-align: center;
+}
+
+
+/*Section: line break*/
+
+.horizontal-line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-bg-color);
 }

@@ -1,0 +1,12 @@
+/*Page: register.html*/
+
+#register-dialog {
+    width: 40%;
+    margin-top: 5vw;
+}
+
+@media screen and (max-width: 1024px) {
+    #register-dialog {
+        width: 90%;
+    }
+}

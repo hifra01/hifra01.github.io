@@ -1,0 +1,12 @@
+/*Page: login.html*/
+
+#login-dialog {
+    width: 40%;
+    margin-top: 5vw;
+}
+
+@media screen and (max-width: 1024px) {
+    #login-dialog {
+        width: 90%;
+    }
+}

@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>:: Topik :: - Teacher's Forum</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
-<body>
 
+<body>
+    <header class="app-bar">
+        <button id="nav-button" class="app-bar-nav-button"><i class="material-icons">menu</i></button>
+        <h1 class="app-bar-title">Teacher's Forum</h1>
+    </header>
+    <main class="flex-main">
+        <nav id="nav-drawer" class="nav-drawer">
+            <div class="drawer-profile">
+                <img src="./assets/images/profile_pic.png">
+                <p>username</p>
+            </div>
+            <ul>
+                <li><a href="./index.html" class="nav-item">Beranda</a></li>
+                <li><a href="./topics.html" class="nav-item active">Topik</a></li>
+                <div class="horizontal-line"></div>
+                <li><a href="./profile.html" class="nav-item">Profil</a></li>
+                <li><a href="../index.html" class="nav-item">Logout</a></li>
+
+            </ul>
+        </nav>
+    </main>
+    <footer>
+        <p>&copy;Copyright 2020 - hifra01</p>
+    </footer>
+    <script src="./assets/js/dashboard.js"></script>
 </body>
+
 </html>
