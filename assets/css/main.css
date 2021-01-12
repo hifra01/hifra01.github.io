@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+/*Section: Variable*/
+
+:root {
+    --bg-color: #fafafa;
+    --primary-bg-color: black;
+    --primary-bg-color-invert: white;
+    --primary-color: white;
+    --primary-color-invert: black;
+    --button-border: 2px solid black;
+    --button-border-radius: 10px;
+    --shadow-1dp: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+    --shadow-2dp: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.20);
+    --shadow-3dp: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.20);
+    --shadow-4dp: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.20);
+    --app-bar-height: 10vh;
+}
+
+/*Section: Default Configuration*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+html, body, main {
+    width: 100%;
+    background-color: var(--bg-color);
+    min-height: 100%;
+}
+
+/*Section: App Bar*/
+
+.app-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--app-bar-height);
+    display: inline-flex;
+    background-color: var(--primary-bg-color);
+    color: white;
+    box-shadow: var(--shadow-2dp);
+    overflow-x: hidden;
+}
+
+.app-bar-title {
+    font-size: x-large;
+    margin: auto 2em;
+}
+
+.app-bar-nav-button {
+    visibility: hidden;
+}
+
+.nav-drawer {
+    margin: auto 2rem auto auto;
+}
+
+.nav-drawer ul {
+    margin: auto;
+}
+
+.nav-drawer ul li {
+    list-style-type: none;
+    display: inline-block;
+    height: 100%;
+}
+
+.nav-item {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: large;
+    align-items: center;
+    padding: 1em;
+    border-radius: var(--button-border-radius);
+}
+
+.nav-item:hover {
+    background-color: var(--primary-bg-color-invert);
+    color: var(--primary-color-invert);
+}
+
+/*Section: App Bar Responsive*/
+@media screen and (max-width: 1024px) {
+    .app-bar {
+        z-index: 1;
+    }
+    .app-bar-nav-button {
+        display: inline-block;
+        visibility: visible;
+        font-size: 2em;
+        background-color: transparent;
+        border: 0;
+        height: 100%;
+        color: var(--primary-color);
+        width: 2em;
+    }
+    .nav-drawer {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        transition: transform 0.3s ease-in-out, visibility 0.3s ease-out;
+        background-color: transparent;
+        width: 70vw;
+        height: 100%;
+        margin-right: 0;
+        z-index: -1;
+    }
+    .nav-drawer.open {
+        visibility: visible;
+        transform: translate(250px, 0);
+    }
+    .nav-drawer ul {
+        height: 100%;
+        margin-top: var(--app-bar-height);
+        background-color: var(--primary-bg-color-invert);
+    }
+    .nav-drawer ul li a {
+        color: var(--primary-color-invert);
+    }
+}
+
+
+/*Section: Main*/
+main {
+    margin-top: var(--app-bar-height);
+}
+
+.flex-main {
+    display: flex;
+    justify-content: center;
+}
+
+/*Section: Card*/
+
+.card {
+    border-radius: 20px;
+    box-shadow: var(--shadow-1dp);
+    background-color: white;
+    padding: 2em;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+/*Section: Button*/
+
+.button-primary {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    font-size: large;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: var(--button-border-radius);
+    border: var(--button-border);
+}
+.button-primary:active {
+    background-color: var(--primary-bg-color-invert);
+    color: var(--primary-color-invert);
+}
+
+/*Section: form*/
+.form {
+    width: 100%;
+}
+
+.form-input-group {
+    margin-bottom: 1em;
+}
+
+.form-label {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+}
+.form-input {
+    display: block;
+    width: 100%;
+    min-height: 1.5em;
+    margin-top: 0.5em;
+    padding: 0.25em;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+}
+.form-button-group {
+    display: inline-flex;
+    width: 100%;
+}
+
+.form-button-group .button-primary {
+    margin-left: auto;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+/*Section: footer*/
+
+footer {
+    position: absolute;
+    height: var(--app-bar-height);
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: auto;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #cccccc;
+    background-color: var(--bg-color);
+}
+
+footer p {
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+/*Section: Texts*/
+.section-title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+}
+/*Page: login.html*/
+
+#login-dialog {
+    width: 40%;
+    margin-top: 8%;
+}
+
+@media screen and (max-width: 1024px) {
+    #login-dialog {
+        width: 90%;
+    }
+}
