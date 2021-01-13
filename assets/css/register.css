@@ -3,6 +3,7 @@
 #register-dialog {
     width: 40%;
     margin-top: 5vw;
+    margin-bottom: var(--app-bar-height);
 }
 
 @media screen and (max-width: 1024px) {

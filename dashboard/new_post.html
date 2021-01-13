@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:: Beranda :: - Teacher's Forum</title>
+    <title>:: Diskusi Baru :: - Teacher's Forum</title>
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
-
 <body>
 <header class="app-bar">
     <button id="nav-button" class="app-bar-nav-button"><i class="material-icons">menu</i></button>
@@ -20,27 +18,38 @@
             <p>John Doe</p>
         </div>
         <ul>
-            <li><a href="./index.html" class="nav-item active">Beranda</a></li>
+            <li><a href="./index.html" class="nav-item">Beranda</a></li>
             <li><a href="./discussions.html" class="nav-item">Semua Diskusi</a></li>
             <div class="horizontal-line"></div>
             <li><a href="./profile.html" class="nav-item">Profil</a></li>
             <li><a href="../index.html" class="nav-item">Logout</a></li>
-
         </ul>
     </nav>
     <div id="main-content">
-        <section id="followed-discussions">
-            <h2 class="section-title">Diskusi yang Anda ikuti</h2>
-            <div id="followed-discussions-container" class="posts-container"></div>
+        <section id="new-post">
+            <h2 class="section-title">Buat diskusi baru</h2>
+            <div class="card">
+                <form class="form">
+                    <div class="form-input-group">
+                        <label for="postTitle" class="form-label">Judul</label>
+                        <input type="text" id="postTitle" name="postTitle" class="form-input" required>
+                    </div>
+                    <div class="form-input-group">
+                        <label for="postContent" class="form-label">Isi</label>
+                        <textarea id="postContent" class="new-post-textarea"></textarea>
+                    </div>
+                    <div class="form-button-group">
+                        <a href="./index.html" class="button-primary">Buat diskusi</a>
+                    </div>
+                </form>
+            </div>
         </section>
     </div>
 </main>
-<a href="./new_post.html" class="button-primary float-button">+ Diskusi baru</a>
 <footer>
     <p>&copy;Copyright 2020 - hifra01</p>
 </footer>
 <script src="./assets/js/dashboard.js"></script>
-<script src="./assets/js/index-page.js"></script>
-</body>
 
+</body>
 </html>

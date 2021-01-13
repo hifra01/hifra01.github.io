@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>:: Topik :: - Teacher's Forum</title>
+    <title>:: Semua Diskusi :: - Teacher's Forum</title>
     <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
 
@@ -21,18 +21,25 @@
             </div>
             <ul>
                 <li><a href="./index.html" class="nav-item">Beranda</a></li>
-                <li><a href="./topics.html" class="nav-item active">Topik</a></li>
+                <li><a href="./discussions.html" class="nav-item active">Semua Diskusi</a></li>
                 <div class="horizontal-line"></div>
                 <li><a href="./profile.html" class="nav-item">Profil</a></li>
                 <li><a href="../index.html" class="nav-item">Logout</a></li>
-
             </ul>
         </nav>
+        <div id="main-content">
+            <section id="all-discussions">
+                <h2 class="section-title">Semua Diskusi</h2>
+                <div id="all-discussions-container" class="posts-container"></div>
+            </section>
+        </div>
     </main>
+    <a href="./new_post.html" class="button-primary float-button">+ Diskusi baru</a>
     <footer>
         <p>&copy;Copyright 2020 - hifra01</p>
     </footer>
     <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/discussions-page.js"></script>
 </body>
 
 </html>

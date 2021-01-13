@@ -52,8 +52,11 @@ main {
 }
 
 .app-bar-title {
+    color: var(--primary-color);
+    text-decoration: none;
     font-size: x-large;
     margin: auto 2em;
+    font-weight: bolder;
 }
 
 .app-bar-nav-button {
@@ -97,6 +100,7 @@ main {
     .app-bar {
         z-index: 1;
     }
+
     .app-bar-nav-button {
         display: inline-block;
         visibility: visible;
@@ -108,6 +112,7 @@ main {
         width: 2em;
         cursor: pointer;
     }
+
     .nav-drawer {
         visibility: hidden;
         position: fixed;
@@ -121,10 +126,12 @@ main {
         z-index: -1;
         box-shadow: var(--shadow-1dp);
     }
+
     .nav-drawer.open {
         visibility: visible;
         transform: translate(70vw, 0);
     }
+
     .nav-drawer ul {
         padding: 0;
         display: block;
@@ -133,11 +140,13 @@ main {
         margin-top: var(--app-bar-height);
         background-color: var(--primary-bg-color-invert);
     }
+
     .nav-drawer ul li {
         width: 100%;
         height: initial;
         padding: 1em;
     }
+
     .nav-item {
         padding-left: 2em;
         margin: 0;
@@ -147,6 +156,7 @@ main {
         text-decoration: none;
         border-radius: 90px;
     }
+
     .nav-item:active {
         color: var(--primary-color);
         background-color: var(--primary-bg-color);
@@ -237,13 +247,10 @@ main {
 /*Section: footer*/
 
 footer {
-    position: absolute;
     height: var(--app-bar-height);
     width: 100%;
     margin-bottom: 0;
     margin-top: auto;
-    bottom: 0;
-    left: 0;
     border-top: 1px solid #cccccc;
     background-color: var(--bg-color);
     display: flex;
@@ -262,4 +269,46 @@ footer p {
     font-weight: bold;
     margin-bottom: 1em;
     text-align: center;
+}
+
+/*Section: Hero*/
+.hero {
+    width: 100%;
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/hero-image.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.hero-content {
+    text-align: center;
+    color: var(--primary-color);
+    height: 100%;
+}
+.hero-title {
+    font-weight: 800;
+    font-size: 64pt;
+}
+.hero-subtitle {
+    font-size: 18pt;
+}
+.hero-register {
+    background-color: var(--primary-bg-color-invert);
+    color: var(--primary-color-invert);
+    padding: 1em 2em;
+    text-decoration: none;
+    font-size: x-large;
+    border: 1px solid black;
+    margin-top: 1em;
+    cursor: pointer;
+}
+.hero-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.hero-attribution {
+    margin-top: 1em;
 }

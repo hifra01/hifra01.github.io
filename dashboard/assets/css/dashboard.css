@@ -87,18 +87,19 @@ main {
 .nav-drawer {
     visibility: hidden;
     position: fixed;
-    left: -20vw;
+    left: -25vw;
     width: 25vw;
     height: 100%;
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-out;
     overflow: hidden;
     padding: 2em;
+    background-color: white;
 }
 
 .nav-drawer.open {
     visibility: visible;
     box-shadow: var(--shadow-2dp);
-    transform: translate(20vw, 0);
+    transform: translate(25vw, 0);
 }
 
 .drawer-profile {
@@ -110,7 +111,7 @@ main {
     display: block;
     margin: auto;
     width: 100%;
-    max-width: 250px;
+    max-width: 150px;
 }
 
 .drawer-profile p {
@@ -136,18 +137,12 @@ main {
 .nav-item {
     color: var(--primary-color-invert);
     width: 100%;
-    padding: 1em;
     display: inline-block;
     text-decoration: none;
     border-radius: 90px;
     font-weight: bold;
-    padding-left: 2em;
+    padding: 1em 1em 1em 2em;
     margin: 0;
-    color: var(--primary-color-invert);
-    width: 100%;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 90px;
 }
 
 .nav-item:hover {
@@ -168,13 +163,21 @@ main {
 
 @media screen and (max-width: 1024px) {
     .nav-drawer {
+        left: -50vw;
         width: 50vw;
+    }
+    .nav-drawer.open{
+        transform: translate(50vw, 0);
     }
 }
 
 @media screen and (max-width: 768px) {
     .nav-drawer {
+        left: -75vw;
         width: 75vw;
+    }
+    .nav-drawer.open {
+        transform: translate(75vw, 0);
     }
     .drawer-profile img {
         max-width: 100px;
@@ -204,6 +207,7 @@ main {
     padding: 0.5em 1em;
     border-radius: var(--button-border-radius);
     border: var(--button-border);
+    cursor: pointer;
 }
 
 .button-primary:active {
@@ -253,13 +257,10 @@ main {
 /*Section: footer*/
 
 footer {
-    position: absolute;
     height: var(--app-bar-height);
     width: 100%;
     margin-bottom: 0;
     margin-top: auto;
-    bottom: 0;
-    left: 0;
     border-top: 1px solid #cccccc;
     background-color: var(--bg-color);
     display: flex;
@@ -274,10 +275,9 @@ footer p {
 /*Section: Texts*/
 
 .section-title {
-    font-size: x-large;
     font-weight: bold;
     margin-bottom: 1em;
-    text-align: center;
+    font-size: xx-large;
 }
 
 
@@ -287,4 +287,221 @@ footer p {
     height: 2px;
     width: 100%;
     background-color: var(--primary-bg-color);
+}
+
+/*Section: Main Content*/
+#main-content {
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+}
+
+/*Section: Post card*/
+.posts-container {
+    display: grid;
+    grid-gap: 20px;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1024px){
+    .posts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .posts-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.post-card {
+    margin: 1em 0;
+    display: block;
+}
+.post-card-link {
+    text-decoration: none;
+    color: var(--primary-color-invert);
+}
+.post-card .post-title {
+    font-size: x-large;
+    margin: 0.5em 0;
+}
+.post-card .post-creator {
+    margin: 0.5em 0;
+}
+.post-card .post-topics {
+    margin: 0.5em 0;
+    display: inline-flex;
+}
+.post-topics .topics-item {
+    background-color: var(--primary-bg-color);
+    border-radius: 90px;
+    padding: 0.25em 0.5em;
+    margin-right: 0.5em;
+    color: var(--primary-color);
+}
+
+/*Section: Discussion and Replies*/
+
+#discussion-header {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.discussion-title {
+    font-size: xx-large;
+}
+.discussion-creator {
+    margin-top: 0.5em;
+}
+
+.reply-profile {
+    width: 20%;
+    display: block;
+}
+
+.reply-profile-picture {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+}
+
+.reply-profile-name {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.reply-content {
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.reply-content p {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.discussion-replies {
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px){
+    .discussion-replies {
+        display: block;
+    }
+
+    .reply-profile {
+        display: inline-flex;
+        width: 100%;
+        align-items: center;
+    }
+    .reply-profile-picture {
+        max-width: 2em;
+    }
+    .reply-profile-name {
+        text-align: left;
+        margin-top: 0;
+        margin-left: 1em;
+    }
+    .reply-content {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 1em;
+    }
+}
+
+/*Section: Reply input box*/
+
+#discussion-reply .card {
+    display: block;
+}
+
+#discussion-reply-title {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#discussion-reply-textarea {
+    width: 100%;
+    height: 12rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    overflow-y: scroll;
+    font-size: large;
+    padding: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+#discussion-reply-submit {
+    width: 100%;
+    border-radius: 90px;
+}
+
+/*Section: float-button*/
+.float-button {
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;
+    border-radius: 90px;
+    box-shadow: var(--shadow-4dp);
+    text-decoration: none;
+}
+
+/*Section: new post*/
+.new-post-textarea {
+    width: 100%;
+    height: 12rem;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    overflow-y: scroll;
+    font-size: large;
+    padding: 1em;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+/*Section: Profile page*/
+.profile {
+    display: inline-block;
+    width: 100%;
+    padding: 4em 8em;
+}
+.profile-picture {
+    display: flex;
+    width: 100%;
+}
+.profile-picture img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+.profile-detail {
+    margin-top: 2em;
+    text-align: center;
+}
+.profile-name {
+    font-size: x-large;
+    font-weight: bold;
+}
+.profile-office {
+    font-size: x-large;
+}
+
+@media screen and (max-width: 767px) {
+    .profile {
+        padding: 2em;
+    }
 }

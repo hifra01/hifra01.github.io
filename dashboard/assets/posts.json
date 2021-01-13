@@ -1,6 +1,6 @@
 {
     "posts": [{
-            "id": 0,
+            "id": 1,
             "title": "tips mengajar saat pandemi",
             "created_by": "Jono",
             "topics": [
@@ -20,7 +20,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": 2 ,
             "title": "rekomendasi laptop untuk mengajar",
             "created_by": "Imam",
             "topics": [

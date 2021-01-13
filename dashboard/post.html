@@ -17,22 +17,34 @@
         <nav id="nav-drawer" class="nav-drawer">
             <div class="drawer-profile">
                 <img src="./assets/images/profile_pic.png">
-                <p>username</p>
+                <p>John Doe</p>
             </div>
             <ul>
                 <li><a href="./index.html" class="nav-item">Beranda</a></li>
-                <li><a href="./topics.html" class="nav-item">Topik</a></li>
+                <li><a href="./discussions.html" class="nav-item">Semua Diskusi</a></li>
                 <div class="horizontal-line"></div>
                 <li><a href="./profile.html" class="nav-item">Profil</a></li>
                 <li><a href="../index.html" class="nav-item">Logout</a></li>
-
             </ul>
         </nav>
+        <div id="main-content">
+            <div id="discussion-header">
+            </div>
+            <div id="discussion-content">
+            </div>
+            <div id="discussion-reply">
+                <div class="card">
+                    <label for="discussion-reply-textarea" id="discussion-reply-title">Balas</label><textarea id="discussion-reply-textarea"></textarea>
+                    <button class="button-primary" id="discussion-reply-submit">Kirim</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy;Copyright 2020 - hifra01</p>
     </footer>
     <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/post-page.js"></script>
 </body>
 
 </html>

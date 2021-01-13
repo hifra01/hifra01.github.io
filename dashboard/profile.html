@@ -9,30 +9,44 @@
 </head>
 
 <body>
-    <header class="app-bar">
-        <button id="nav-button" class="app-bar-nav-button"><i class="material-icons">menu</i></button>
-        <h1 class="app-bar-title">Teacher's Forum</h1>
-    </header>
-    <main class="flex-main">
-        <nav id="nav-drawer" class="nav-drawer">
-            <div class="drawer-profile">
-                <img src="./assets/images/profile_pic.png">
-                <p>username</p>
+<header class="app-bar">
+    <button id="nav-button" class="app-bar-nav-button"><i class="material-icons">menu</i></button>
+    <h1 class="app-bar-title">Teacher's Forum</h1>
+</header>
+<main class="flex-main">
+    <nav id="nav-drawer" class="nav-drawer">
+        <div class="drawer-profile">
+            <img src="./assets/images/profile_pic.png">
+            <p>John Doe</p>
+        </div>
+        <ul>
+            <li><a href="./index.html" class="nav-item">Beranda</a></li>
+            <li><a href="./discussions.html" class="nav-item">Semua Diskusi</a></li>
+            <div class="horizontal-line"></div>
+            <li><a href="./profile.html" class="nav-item active">Profil</a></li>
+            <li><a href="../index.html" class="nav-item">Logout</a></li>
+        </ul>
+    </nav>
+    <div id="main-content">
+        <section id="user-profile">
+            <h2 class="section-title">Profil</h2>
+            <div class="card profile">
+                <div class="profile-picture">
+                    <img src="./assets/images/profile_pic.png">
+                </div>
+                <div class="profile-detail">
+                    <p class="profile-name">John Doe</p>
+                    <p class="profile-office">SMAN 1 Puerto Rico</p>
+                </div>
             </div>
-            <ul>
-                <li><a href="./index.html" class="nav-item">Beranda</a></li>
-                <li><a href="./topics.html" class="nav-item">Topik</a></li>
-                <div class="horizontal-line"></div>
-                <li><a href="./profile.html" class="nav-item active">Profil</a></li>
-                <li><a href="../index.html" class="nav-item">Logout</a></li>
+        </section>
 
-            </ul>
-        </nav>
-    </main>
-    <footer>
-        <p>&copy;Copyright 2020 - hifra01</p>
-    </footer>
-    <script src="./assets/js/dashboard.js"></script>
+    </div>
+</main>
+<footer>
+    <p>&copy;Copyright 2020 - hifra01</p>
+</footer>
+<script src="./assets/js/dashboard.js"></script>
 </body>
 
 </html>
