@@ -4,10 +4,7 @@
     <list default="true" id="1d6b0494-4766-4b56-a871-69a2ae100ca9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/assets/js/post-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/js/post-page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/assets/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/posts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/assets/preferences.json" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/preferences.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/assets/topics.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/new_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/new_post.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +48,7 @@
       <recent name="D:\Developments\hifra01.github.io\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.post.html">
+  <component name="RunManager" selected="JavaScript Debug.new_post.html">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hifra01.github.io/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -66,9 +63,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.new_post.html" />
         <item itemvalue="JavaScript Debug.post.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
-        <item itemvalue="JavaScript Debug.new_post.html" />
         <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
@@ -88,6 +85,7 @@
       <workItem from="1610548915457" duration="452000" />
       <workItem from="1610549393164" duration="15354000" />
       <workItem from="1610592059218" duration="2434000" />
+      <workItem from="1610608430790" duration="196000" />
     </task>
     <servers />
   </component>
