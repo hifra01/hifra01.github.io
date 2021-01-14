@@ -3,18 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1d6b0494-4766-4b56-a871-69a2ae100ca9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/assets/js/post-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/js/post-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/assets/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/posts.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/discussions.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/discussions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/assets/preferences.json" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/assets/preferences.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/assets/topics.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +42,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -58,7 +51,7 @@
       <recent name="D:\Developments\hifra01.github.io\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.post.html">
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hifra01.github.io/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -68,8 +61,12 @@
     <configuration name="new_post.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hifra01.github.io/dashboard/new_post.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
+    <configuration name="post.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/hifra01.github.io/dashboard/post.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.post.html" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.new_post.html" />
         <item itemvalue="JavaScript Debug.index.html" />
@@ -90,6 +87,7 @@
       <workItem from="1610548567817" duration="323000" />
       <workItem from="1610548915457" duration="452000" />
       <workItem from="1610549393164" duration="15354000" />
+      <workItem from="1610592059218" duration="2434000" />
     </task>
     <servers />
   </component>

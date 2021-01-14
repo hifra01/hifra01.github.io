@@ -1,37 +1,311 @@
 {
-    "posts": [{
-            "id": 1,
-            "title": "tips mengajar saat pandemi",
-            "created_by": "Jono",
-            "topics": [
-                "Zoom",
-                "WFH"
-            ],
-            "replies": [{
-                    "id": 0,
-                    "created_by": "Jono",
-                    "content": "kira-kira ada tips untuk ngajar saat pandemi gini gk ya? selama ini saya ngajar tapi siswa saya kok kaya ngantuk semua xixixi"
-                },
-                {
-                    "id": 1,
-                    "created_by": "Imam",
-                    "content": "dibuat video youtube saja pak, biar mereka bisa nonton kapan saja"
-                }
-            ]
+  "posts": [
+    {
+      "id": 1,
+      "title": "tips mengajar saat pandemi",
+      "created_by": "Jono",
+      "topics": [
+        "Zoom",
+        "WFH"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Jono",
+          "content": "kira-kira ada tips untuk ngajar saat pandemi gini gk ya? selama ini saya ngajar tapi siswa saya kok kaya ngantuk semua xixixi"
         },
         {
-            "id": 2 ,
-            "title": "rekomendasi laptop untuk mengajar",
-            "created_by": "Imam",
-            "topics": [
-                "IT",
-                "WFH"
-            ],
-            "replies": [{
-                "id": 0,
-                "created_by": "Imam",
-                "content": "Saya rencana mau beli laptop baru soalnya yang lama dipake anak saya sekolah online. Kira-kira merek yg aman di kantong apa ya?"
-            }]
+          "id": 1,
+          "created_by": "Imam",
+          "content": "dibuat video youtube saja pak, biar mereka bisa nonton kapan saja"
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "title": "rekomendasi laptop untuk mengajar",
+      "created_by": "Imam",
+      "topics": [
+        "IT",
+        "WFH"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Imam",
+          "content": "Saya rencana mau beli laptop baru soalnya yang lama dipake anak saya sekolah online. Kira-kira merek yg aman di kantong apa ya?"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "For Template Purpose 1",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "For Template Purpose 2",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "For Template Purpose 3",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "For Template Purpose 4",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "For Template Purpose 5",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "For Template Purpose 6",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "For Template Purpose 7",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "For Template Purpose 8",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "For Template Purpose 9",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "For Template Purpose 10",
+      "created_by": "Arnold Schwarzenegger",
+      "topics": [
+        "Template",
+        "Lorem",
+        "Ipsum"
+      ],
+      "replies": [
+        {
+          "id": 0,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh postingan awal, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 1,
+          "created_by": "Imam",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        },
+        {
+          "id": 2,
+          "created_by": "Arnold Schwarzenegger",
+          "content": "Ini adalah contoh balasan diskusi, hanya untuk kebutuhan presentasi."
+        }
+      ]
+    }
+  ]
 }

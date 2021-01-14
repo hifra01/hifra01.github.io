@@ -321,6 +321,7 @@ footer p {
 .post-card {
     margin: 1em 0;
     display: block;
+    height: 250px;
 }
 .post-card-link {
     text-decoration: none;
@@ -348,9 +349,29 @@ footer p {
 /*Section: Discussion and Replies*/
 
 #discussion-header {
-    display: inline-block;
+    display: flex;
     margin-bottom: 1em;
+    width: 100%;
+    align-items: center;
 }
+
+.discussion-detail {
+    display: inline-block;
+    margin-left: 0;
+    width: 100%;
+}
+
+.discussion-follow {
+    width: 100%;
+    display: flex;
+}
+
+.discussion-follow button {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+
 
 .discussion-title {
     font-size: xx-large;
@@ -397,6 +418,18 @@ footer p {
 }
 
 @media screen and (max-width: 767px){
+    #discussion-header {
+        display: block;
+    }
+
+    .discussion-follow {
+        margin-top: 1em;
+    }
+
+    .discussion-follow button {
+        width: 100%;
+    }
+
     .discussion-replies {
         display: block;
     }
